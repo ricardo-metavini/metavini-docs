@@ -1,0 +1,81 @@
+
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+
+  --metavini-dark: #000000;
+  --metavini-dark-gray: #222222;
+  --metavini-red:#e3433e;
+  --metavini-dark-red:#B50434;
+  --metavini-white: #ffffff;
+
+  --font-color-gray: #666666;
+  --font-color-white: #ffffff;
+
+  --ifm-font-family-base: "Open Sans";
+  --ifm-line-height-base: 19px;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* THEME */
+
+
+/* CUSTOM FOOTER */
+.original-footer .footer {
+  background-color: var(--metavini-dark-red);
+  color: var(--metavini-white);
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 0;
+}
+
+/* NAVBAR */
+.navbar .navbar__link{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/* SEARCH */
+.navbar .aa-DetachedSearchButton{
+  border: 0;
+  background: transparent;
+}
+
+.navbar .aa-DetachedSearchButtonPlaceholder{
+  display:none;
+}
+
+.navbar .aa-DetachedSearchButtonIcon{
+  color: var(--ifm-font-color-base);
+}
