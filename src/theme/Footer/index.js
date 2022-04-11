@@ -12,16 +12,16 @@ import style from './styles.module.css'
 
 function SocialLink({ social }) {
   return (
-      <div className={style.CommunityLink}>
+      <div className={style.SocialsLink}>
         <Link href={social.url} target="_blank">
           <ThemedImage
             width={35}
             height={30}
             sources={{
-              light: useBaseUrl(social.logoSrc),
-              dark: useBaseUrl(social.logoSrcDark),
+              light: useBaseUrl(social.logo),
+              dark: useBaseUrl(social.logo),
             }}
-            alt={social.alt}
+            alt={social.name}
           />
         </Link>
       </div>
@@ -33,47 +33,65 @@ export default function Footer(props) {
 
   const logo = siteConfig.customFields.customFooter.logo;
   const socials = siteConfig.customFields.customFooter.socials;
+  const copyright = siteConfig.customFields.customFooter.copyright;
 
   return (
     <>
       <div className={style.OuterContainer}>
         <div className={style.InnerContainer} >
-          <div className={style.Col1}>
-            <div className="logo-container">
-              <Link href={logo.href}>
-                <ThemedImage
-                  width={40}
-                  height={37}
-                  sources={{
-                    light: useBaseUrl(logo.src),
-                    dark: useBaseUrl(logo.srcDark),
-                  }}
-                  alt={logo.alt}
-                />
-              </Link>
-              <span className={style.LogoName}>Metavini</span>
-            </div>
-            <div className={style.DescContainer}>
-              <span className={style.LogoDesc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
-            </div>
-          </div>
-          <div className={clsx(style.Col2, "original-footer")}>
-            <OriginalFooter {...props} />
-          </div>
-          <div className={style.Col3}>
-            <span className={style.CommunitySecTitle}>Join the community</span>
-            <div className={style.CommunityLinksContainer}>
-                {socials.map((social, i) => {
-                  return (
-                    <SocialLink
-                      social={social}
-                      key={i}
+          <div className={style.FooterRow} >
+            <div className={style.Col1}>
+              <div className={style.LogoOuterContainer}>
+                <div className={style.LogoContainer}>
+                  <Link href={logo.href}>
+                    <ThemedImage
+                      width={200}
+                      height={40}
+                      sources={{
+                        light: useBaseUrl(logo.src),
+                        dark: useBaseUrl(logo.srcDark),
+                      }}
+                      alt={logo.alt}
                     />
-                  )
-                })}
+                  </Link>
+                </div>
+                <div className={style.DescContainer}>
+                  <span className={style.LogoDesc}>{logo.description}</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div className={clsx(style.Col2, "original-footer")}>
+              <div className={style.LinksContainer}>
+                <OriginalFooter {...props} />
+              </div>
+            </div>
+
+
+            <div className={style.Col3}>
+              <div className={style.SocialsContainer}>
+                <span className={style.SocialsTitle}>Stay in the loop</span>
+                <span className={style.SocialsDesc}>Follow us to stay in the loop with our latest news.</span>
+                <div className={style.SocialsLinksContainer}>
+                    {socials.map((social, i) => {
+                      return (
+                        <SocialLink
+                          social={social}
+                          key={i}
+                        />
+                      )
+                    })}
+                </div>
+              </div>
             </div>
           </div>
         </div>  
+        <div className={style.FooterRightsBar}>
+          <div className={style.FooterRights}>
+                {copyright}
+          </div>
+        </div>
       </div>
     </>
   );

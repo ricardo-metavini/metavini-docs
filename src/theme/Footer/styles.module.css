@@ -1,5 +1,11 @@
 .OuterContainer{
-  height: 240px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
   background-color: var(--metavini-dark-red);
   color: var(--metavini-white);
   font-family: Open Sans;
@@ -7,106 +13,185 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+
+  height: 292px;
+}
+
+@media (max-width: 768px) {
+  .OuterContainer{
+    height: 994px;
+  }
 }
 
 .InnerContainer{
-  padding: 40px 90px;
+  width: 85%;
+  position: relative;
+}
+
+.FooterRow{
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  list-style: none;
+  padding-bottom: 40px;
 }
 
 .Col1{
-  width: calc(100% * 1 / 3.001);
-  box-sizing: border-box;
-  max-width: 100%;
+  width: 25%;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .Col1{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
 }
 
 .Col2{
-  width: calc(100% * 1 / 3.001);
-  box-sizing: border-box;
-  max-width: 100%;
+  width: 49%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .Col2{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+  }
 }
 
 .Col3{
-  width: calc(100% * 1 / 3.001);
-  box-sizing: border-box;
-  max-width: 100%;
-  margin-top: 20px;
+  width: 26%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
 }
 
-.LogoName{
-  width: 150px;
-  height: 35px;
-  font-size:30px;
-  vertical-align: super;
-  font-family: Julius Sans One;
-  margin-left: 5px;
-  font-weight: normal;
+@media (max-width: 768px) {
+  .Col3{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+.FooterRightsBar{
+  width: 100%;
+  height: 32px;
+  display: flex;
+  background-color: var(--metavini-red);
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.FooterRights{
+  margin: auto;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.LogoOuterContainer{
+  width: 100%
+}
+
+.LogoContainer{
+  min-width: 180px;
+  width: 200px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .LogoContainer{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .DescContainer{
   margin-top: 25px;
-  width: 330px;
+  min-width: 188px;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .DescContainer{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .LogoDesc{
-  font-family: Open Sans;
-  font-size: 14px;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
   line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
-.Links{
-  list-style: none;
-  font-family: Open Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: left;
-  padding-left: 0;
-}
-
-.LinksCol{
-  display: inline-block;
-  width: 49%;
+.LinksContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 85%;
   height: 100%;
 }
 
-.LinksColCategory{
-  font-family: Open Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: left;
+.SocialsContainer{
+  position: relative;
 }
 
-.CommunitySecTitle{
-  font-family: Open Sans;
+@media (max-width: 768px) {
+  .SocialsContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.SocialsTitle{
+  display: flex;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 21px;
-  font-style: normal;
-  font-weight: 600;
   line-height: 28px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
-.CommunityLinksContainer{
-  width: 100%;
-  height: 30px;
-  margin-top: 15px;
-  display: inline-block;
+
+.SocialsDesc{
+  display: flex;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  margin-top:10px;
 }
 
-.CommunityLink{
+.SocialsLinksContainer{
+  margin-top: 15px;
+  display: flex;
+  margin-left: -10px;
+}
+
+.SocialsLink{
   display: inline-block;
   margin-left: 10px;
+  margin-top: 30px;
 }

@@ -11,12 +11,19 @@
 
   --metavini-dark: #000000;
   --metavini-dark-gray: #222222;
-  --metavini-red:#e3433e;
+  --metavini-gray: #666666;
+  --metavini-light-gray: #999999;
+  --metavini-bg-gray: #EFEFEF;
+  --metavini-red:#DF0540;
   --metavini-dark-red:#B50434;
   --metavini-white: #ffffff;
 
+  --font-color-black: #333333;
   --font-color-gray: #666666;
+  --font-color-light-gray: #999999;
+  --font-color-super-light-gray: #C8C4C7;
   --font-color-white: #ffffff;
+  --font-color-red: #DF0540;
 
   --ifm-font-family-base: "Open Sans";
   --ifm-line-height-base: 19px;
@@ -43,19 +50,76 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+:focus, :focus-visible  {
+  outline: none;
+}
+
 /* THEME */
 
+#__docusaurus{
+  position: relative;
+}
+
+.main-wrapper{
+  width: 100%;
+  padding-bottom: 285px;
+}
+
+@media (max-width: 768px) {
+  .main-wrapper{
+    padding-bottom: 994px;
+  }
+}
 
 /* CUSTOM FOOTER */
 .original-footer .footer {
   background-color: var(--metavini-dark-red);
   color: var(--metavini-white);
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
   padding: 0;
+  width: 100%;
+}
+
+.original-footer .footer a:hover {
+  color: var(--metavini-white);
+  text-decoration: none;
+}
+
+.original-footer .footer .footer__title{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.original-footer .footer .footer__items{
+  list-style: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  padding-left: 0px;
+}
+
+.original-footer .footer .footer__links{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+
+.original-footer .footer .footer__col{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
+
+.original-footer .footer .footer__item svg{
+  display: none;
 }
 
 /* NAVBAR */
@@ -64,6 +128,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+}
+
+.navbar .navbar__link svg{
+  display: none;
 }
 
 /* SEARCH */

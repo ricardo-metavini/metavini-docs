@@ -20,38 +20,43 @@ const config = {
     metadataDescription: 'Here you can find all info regarding Metavini',
     customFooter: {
       logo: {
-        alt: 'Metavini Docs Logo',
-        src: 'img/logo-white.svg',
-        srcDark: 'img/logo-white.svg',
+        alt: 'Metavini',
+        description: 'A new decentralized ecosystem that connects wine producers,consumers and collectors.',
+        src: 'img/logos/logo-main-full-white.svg',
+        srcDark: 'img/logos/logo-main-full-white.svg',
         href: 'https://docs.metavini.com',
       },
       socials: [
         {
-          url: 'https://twitter.com',
-          logoSrc: 'img/community/twitter.svg',
-          logoSrcDark: 'img/community/twitter.svg',
-          alt: "Twitter",
+          name: "twitter",
+          logo: "img/socials/twitter.svg",
+          handle: "@Metavininft",
+          url: "https://twitter.com/Metavininft",
         },
         {
-          url: 'https://youtube.com',
-          logoSrc: 'img/community/youtube.svg',
-          logoSrcDark: 'img/community/youtube.svg',
-          alt: "Youtube",
+          name: "instagram",
+          logo: "img/socials/instagram.svg",
+          handle: "metavini.nft",
+          url: "https://www.instagram.com/metavini.nft",
         },
         {
-          url: 'https://instagram.com',
-          logoSrc: 'img/community/instagram.svg',
-          logoSrcDark: 'img/community/instagram.svg',
-          alt: "Instagram",
+          name: "facebook",
+          logo: "img/socials/facebook.svg",
+          handle: "@metavini.nft",
+          url: "https://www.facebook.com/metavini.nft",
         },
-        
+        {
+          name: "telegram",
+          logo: "img/socials/telegram.svg",
+          handle: "MetaVini",
+          url: "https://t.me/metavini",
+        },
       ],
       copyright: `© ${new Date().getFullYear()} Metavini Docs. Built with Docusaurus.`,
     }
   },
   stylesheets: [
-    'https://fonts.googleapis.com/css?family=Open+Sans',
-    'https://fonts.googleapis.com/css?family=Julius+Sans+One',
+    'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'
   ],
   presets: [
     [
@@ -90,8 +95,8 @@ const config = {
         hideOnScroll: false,
         logo: {
           alt: 'Metavini Docs Logo',
-          src: 'img/logo-main-dark.svg',
-          srcDark: 'img/logo-main-light.svg',
+          src: 'img/logos/logo-docs-main-dark.svg',
+          srcDark: 'img/logos/logo-docs-main-light.svg',
         },
         items: [
           {
@@ -119,12 +124,7 @@ const config = {
             label: 'Help',
           },
           {
-            href: 'https://medium.com/',
-            label: 'Blog',
-            position: 'right',
-          },
-          {
-            href: 'https://discord.com/',
+            href: 'https://metavini.com/contact',
             label: 'Contact',
             position: 'right',
           },
@@ -134,28 +134,37 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'About',
             items: [
               {
-                label: 'Tutorial',
+                label: 'About Metavini',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Guides',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Become a Partner',
+                to: '/docs/guides/become-partner',
+              },
+            ],
+          },
+          {
+            title: 'Company',
+            items: [
+              {
+                label: 'About Us',
+                href: 'https://metavini.com/about',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Contact',
+                href: 'https://metavini.com/contact',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Community',
+                href: 'https://t.me/metavini',
               },
             ],
           },
@@ -164,7 +173,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/metavini/metavini-docs',
               },
             ],
           },
