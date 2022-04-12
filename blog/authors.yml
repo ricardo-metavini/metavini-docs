@@ -1,14 +1,13 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+md:
+  name: Manuel Dias
+  title: Blockchain Developer @Metavini
+  image_url: /img/team/manuel_dias.jpg
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+cintia:
+  name: Cintia Costa
+  title: Content Manager @Metavini
+  image_url: /img/team/cintia_costa.jpg
+
 
 slorber:
   name: Sébastien Lorber
