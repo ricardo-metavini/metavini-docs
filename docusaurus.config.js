@@ -128,7 +128,7 @@ const config = {
             items: [
               {
                 label: 'About Metavini',
-                to: '/docs/intro',
+                to: '/',
               },
             ],
           },
@@ -137,7 +137,7 @@ const config = {
             items: [
               {
                 label: 'Become a Partner',
-                to: '/docs/guides/become-partner',
+                to: '/guides/become-partner',
               },
             ],
           },
@@ -159,8 +159,12 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Links',
             items: [
+              {
+                label: 'Metavini',
+                href: 'https://metavini.com/',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/metavini/metavini-docs',
