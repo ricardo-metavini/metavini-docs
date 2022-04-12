@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Our vision'
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Our vision

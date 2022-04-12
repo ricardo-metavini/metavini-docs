@@ -64,10 +64,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/metavini/metavini-docs/edit/main',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/metavini/metavini-docs/edit/main',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -105,24 +111,8 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {
-            type: 'doc',
-            docId: 'overview/introduction',
-            position: 'left',
-            label: 'Overview',
-          },
-          {
-            type: 'doc',
-            docId: 'guides/become-partner',
-            position: 'left',
-            label: 'Guides',
-          },
-          {
-            type: 'doc',
-            docId: 'help/faqs',
-            position: 'left',
-            label: 'Help',
-          },
+          {to: 'blog', label: 'Blog', position: 'left'},
+          {to: 'help', label: 'Help', position: 'left'},
           {
             href: 'https://metavini.com/contact',
             label: 'Contact',
