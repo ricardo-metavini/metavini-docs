@@ -20,11 +20,11 @@ const config = {
     metadataDescription: 'Here you can find all info regarding Metavini',
     customFooter: {
       logo: {
-        alt: 'Metavini',
+        alt: 'Metavini Docs',
         description: 'A new decentralized ecosystem that connects wine producers,consumers and collectors.',
-        src: 'img/logos/logo-main-full-white.svg',
-        srcDark: 'img/logos/logo-main-full-white.svg',
-        href: 'https://docs.metavini.com',
+        src: 'img/logos/logo-docs-main-full-white.svg',
+        srcDark: 'img/logos/logo-docs-main-full-white.svg',
+        href: '/',
       },
       socials: [
         {
@@ -100,7 +100,7 @@ const config = {
       navbar: {
         hideOnScroll: false,
         logo: {
-          alt: 'Metavini Docs Logo',
+          alt: 'Metavini Docs',
           src: 'img/logos/logo-docs-main-dark.svg',
           srcDark: 'img/logos/logo-docs-main-light.svg',
         },
