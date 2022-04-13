@@ -27,17 +27,44 @@
 
   --ifm-font-family-base: "Open Sans";
   --ifm-line-height-base: 19px;
+
+  --ifm-navbar-item-padding-horizontal: 15px;
+  --ifm-navbar-link-color: var(--font-color-black);
+  --ifm-navbar-link-hover-color: var(--font-color-black);
+
+  --ifm-menu-color-active: var(--font-color-red);
+
 }
 
 html[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: var(--metavini-dark);
+
+  --ifm-font-color-base-inverse:var(--font-color-white);
+
+  --ifm-background-color: var(--metavini-dark-gray);
+  --ifm-navbar-background-color: var(--metavini-dark);
+  --ifm-hero-background-color: var(--metavini-dark);
+
+  --ifm-navbar-link-color: var(--font-color-white);
+  --ifm-navbar-link-hover-color: var(--font-color-white);
+
+  --ifm-link-color: var(--font-color-red);
+  --ifm-menu-color: var(--font-color-white);
+
+  --ifm-pagination-nav-color:var(--font-color-white);
+  --ifm-pagination-nav-color-hover:var(--font-color-white);
+
+  --ifm-breadcrumb-item-background-active:var(--metavini-light-gray);
+  --ifm-breadcrumb-color-active:var(--font-color-white);
 }
+
+.table-of-contents__link:hover,
+    .table-of-contents__link:hover code,
+    .table-of-contents__link--active,
+    .table-of-contents__link--active code {
+      color: var(--font-color-red);
+      text-decoration: none;
+    }
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
@@ -124,6 +151,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* NAVBAR */
 .navbar .navbar__link{
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -134,10 +162,37 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   display: none;
 }
 
+.navbar .navbar__link--active {
+  color: var(--font-color-red);
+}
+
+.navbar .navbar__items .navbar__item{
+  position: relative;
+  text-transform: uppercase;
+}
+
+.navbar .navbar__link--active:after{
+  content: '';
+  border: 1px solid var(--font-color-red);
+  width: calc(100% - 33px);
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
 /* SEARCH */
+.navbar .navbar__items .dsla-search-wrapper{
+  padding-right: 100px;
+}
+
+.navbar .navbar__items .aa-DetachedSearchButton:focus {
+  box-shadow: none;
+}
+
 .navbar .aa-DetachedSearchButton{
   border: 0;
   background: transparent;
+  cursor: pointer;
 }
 
 .navbar .aa-DetachedSearchButtonPlaceholder{
@@ -146,4 +201,5 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .navbar .aa-DetachedSearchButtonIcon{
   color: var(--ifm-font-color-base);
+  cursor: pointer;
 }

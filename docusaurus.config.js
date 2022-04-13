@@ -108,16 +108,11 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: 'Documentation',
           },
-          {to: 'blog', label: 'Blog', position: 'left'},
-          {to: 'help', label: 'Help', position: 'left'},
-          {
-            href: 'https://metavini.com/contact',
-            label: 'Contact',
-            position: 'right',
-          },
+          {to: 'blog', label: 'Blog', position: 'right'},
+          {to: 'help', label: 'Help', position: 'right'},
         ],
       },
       footer: {
