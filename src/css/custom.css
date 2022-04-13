@@ -203,3 +203,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   color: var(--ifm-font-color-base);
   cursor: pointer;
 }
+
+.navbar .toggleButton_src-theme-ColorModeToggle-styles-module:hover{
+  background: none;
+}
