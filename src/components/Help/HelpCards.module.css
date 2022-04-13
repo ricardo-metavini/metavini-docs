@@ -1,0 +1,52 @@
+.CardsContainer {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    width: 95%;
+    max-width: 1295px;
+    margin: auto;
+    justify-content: center;
+}
+  
+.CardSvg {
+    height: 36px;
+    width: 36px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+  
+.CardContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 280px;
+    width: 289px;
+    max-width: 289px;
+    min-width: 289px;
+    border-radius: 0px;
+    background: #000000;
+    margin: 15px;
+}
+
+.CardHeader{
+    display:block;
+}
+
+.CardBody{
+    display:block;
+}
+
+.CardBodyTitle{
+    display:block;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.CardBodyContent{
+    display:block;
+    padding-left: 25px;
+    padding-right: 15px;
+}

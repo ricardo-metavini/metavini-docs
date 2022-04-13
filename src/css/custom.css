@@ -207,3 +207,9 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .navbar .toggleButton_src-theme-ColorModeToggle-styles-module:hover{
   background: none;
 }
+
+
+/* UTILITIES */
+.jcenter{
+  justify-content: center;
+}

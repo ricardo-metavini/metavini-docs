@@ -4,6 +4,8 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 
+import HelpCards from '../../components/Help/HelpCards';
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -24,22 +26,7 @@ export default function Home() {
       description={siteConfig.customFields.metadataDescription}>
       <HomepageHeader />
       <main>
-          <section className={styles.helpSection}>
-          <div className="container">
-            <div className="row">
-              <p className="hero__subtitle">Documentation</p>
-            </div>
-            <div className="row">
-              <p className="hero__subtitle">Community</p>
-            </div>
-            <div className="row">
-              <p className="hero__subtitle">Socials</p>
-            </div>
-            <div className="row">
-              <p className="hero__subtitle">Direct Contact</p>
-            </div>
-          </div>
-        </section>
+        <HelpCards />
       </main>
     </Layout>
   );
