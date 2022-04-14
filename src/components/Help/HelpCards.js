@@ -8,8 +8,8 @@ const CardsList = [
     Svg: require('/static/img/components/card/documentation.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <p>Learn about Metavini using the <a href="/">documentation on this site</a>. In our <code>docs</code> you will find all the available information.</p>
+        <p>Details about each update can be found on our <a href="/blog">blog</a>.</p>
       </>
     ),
   },
@@ -18,8 +18,8 @@ const CardsList = [
     Svg: require('/static/img/components/card/community.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+         <p>A lot of times the fastest way to get some answers is through asking our community.</p>
+         <p>Chat with the Metavini community at <a href="https://t.me/metavini">Telegram</a>.</p>
       </>
     ),
   },
@@ -28,8 +28,8 @@ const CardsList = [
     Svg: require('/static/img/components/card/socials.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <p>We are present in all the main social media platforms.</p>
+        <p>The one that we will share all the news and the announcements first will be the <a href="https://twitter.com/Metavininft">Twitter</a>. Make sure to follow us.</p>
       </>
     ),
   },
@@ -38,8 +38,8 @@ const CardsList = [
     Svg: require('/static/img/components/card/contact.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <p>If you don't find the info that you need in other sources feel free to direct contact us.</p>
+        <p>A contact form can be found <a href="https://metavini.com/contact">here</a>.</p>
       </>
     ),
   },

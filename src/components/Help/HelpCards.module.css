@@ -5,9 +5,8 @@
     width: 95%;
     max-width: 1295px;
     margin: auto;
-    justify-content: center;
 }
-  
+
 .CardSvg {
     height: 36px;
     width: 36px;
@@ -21,7 +20,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    height: 280px;
+    height: 289px;
     width: 289px;
     max-width: 289px;
     min-width: 289px;
