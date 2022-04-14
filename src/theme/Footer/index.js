@@ -45,7 +45,7 @@ export default function Footer(props) {
                 <div className={style.LogoContainer}>
                   <Link href={logo.href}>
                     <ThemedImage
-                      width={200}
+                      width={242}
                       height={40}
                       sources={{
                         light: useBaseUrl(logo.src),

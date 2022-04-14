@@ -119,17 +119,12 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'About',
+            title: 'Docs',
             items: [
               {
                 label: 'About Metavini',
                 to: '/',
               },
-            ],
-          },
-          {
-            title: 'Guides',
-            items: [
               {
                 label: 'Become a Partner',
                 to: '/guides/become-partner',

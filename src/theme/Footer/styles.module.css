@@ -17,9 +17,9 @@
   height: 292px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .OuterContainer{
-    height: 994px;
+    height: 665px;
   }
 }
 
@@ -31,18 +31,25 @@
 .FooterRow{
   padding-top: 40px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-bottom: 40px;
+}
+
+@media (max-width: 1023px) {
+  .FooterRow{
+    flex-wrap: wrap;
+  }
 }
 
 .Col1{
   width: 25%;
+  min-width: 240px;
   display: flex;
   align-items: flex-start;
   text-align: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .Col1{
     width: 100%;
     align-items: center;
@@ -55,11 +62,11 @@
   width: 49%;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .Col2{
     width: 100%;
     align-items: center;
@@ -75,7 +82,7 @@
   align-items: flex-start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .Col3{
     width: 100%;
     align-items: center;
@@ -109,12 +116,12 @@
 }
 
 .LogoContainer{
-  min-width: 180px;
-  width: 200px;
+  min-width: 240px;
+  width: 240px;
   height: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .LogoContainer{
     margin-left: auto;
     margin-right: auto;
@@ -127,7 +134,7 @@
   max-width: 400px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .DescContainer{
     margin-left: auto;
     margin-right: auto;
@@ -145,16 +152,15 @@
 .LinksContainer{
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  width: 85%;
-  height: 100%;
+  justify-content: center;
+  width: 91%;
 }
 
 .SocialsContainer{
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .SocialsContainer{
     display: flex;
     flex-flow: column;
