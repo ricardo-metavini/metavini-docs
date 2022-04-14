@@ -56,7 +56,8 @@ const config = {
     }
   },
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'
+    'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap',
+    'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'
   ],
   presets: [
     [

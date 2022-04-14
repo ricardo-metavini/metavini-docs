@@ -1,14 +1,5 @@
 
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-
   --metavini-dark: #000000;
   --metavini-dark-gray: #222222;
   --metavini-gray: #666666;
@@ -25,25 +16,53 @@
   --font-color-white: #ffffff;
   --font-color-red: #DF0540;
 
+
   --ifm-font-family-base: "Open Sans";
   --ifm-line-height-base: 19px;
 
   --ifm-navbar-item-padding-horizontal: 15px;
+  --ifm-code-font-size: 95%;
+
+  --ifm-color-primary: var(--metavini-red);
+
+  --ifm-font-color-base-inverse:var(--font-color-black);
+
+  --ifm-background-color: var(--metavini-bg-gray);
+  --ifm-navbar-background-color: var(--metavini-white);
+  --ifm-hero-background-color: var(--metavini-white);
+
   --ifm-navbar-link-color: var(--font-color-black);
   --ifm-navbar-link-hover-color: var(--font-color-black);
 
+  --ifm-link-color: var(--font-color-red);
+  --ifm-menu-color: var(--font-color-black);
+
+  --ifm-pagination-nav-color:var(--font-color-black);
+  --ifm-pagination-nav-color-hover:var(--font-color-red);
+
+  --ifm-breadcrumb-item-background-active:var(--metavini-bg-gray);
+  --ifm-breadcrumb-color-active:var(--font-color-black);
+
   --ifm-menu-color-active: var(--font-color-red);
+  --cards-background-color: var(--metavini-white);
+
+  --ifm-heading-color:var(--font-color-black);
+  --ifm-heading-font-family: 'Roboto';
+  --ifm-heading-font-weight: 300;
+
 
 }
 
 html[data-theme='dark'] {
-  --ifm-color-primary: var(--metavini-dark);
+  --ifm-color-primary: var(--metavini-red);
 
   --ifm-font-color-base-inverse:var(--font-color-white);
 
   --ifm-background-color: var(--metavini-dark-gray);
   --ifm-navbar-background-color: var(--metavini-dark);
   --ifm-hero-background-color: var(--metavini-dark);
+
+  --cards-background-color: var(--metavini-dark);
 
   --ifm-navbar-link-color: var(--font-color-white);
   --ifm-navbar-link-hover-color: var(--font-color-white);
@@ -52,10 +71,12 @@ html[data-theme='dark'] {
   --ifm-menu-color: var(--font-color-white);
 
   --ifm-pagination-nav-color:var(--font-color-white);
-  --ifm-pagination-nav-color-hover:var(--font-color-white);
+  --ifm-pagination-nav-color-hover:var(--font-color-red);
 
-  --ifm-breadcrumb-item-background-active:var(--metavini-light-gray);
+  --ifm-breadcrumb-item-background-active:var(--metavini-dark-gray);
   --ifm-breadcrumb-color-active:var(--font-color-white);
+
+  --ifm-heading-color:var(--font-color-white);
 }
 
 .table-of-contents__link:hover,
@@ -212,7 +233,13 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* SEARCH */
 .navbar .navbar__items .dsla-search-wrapper{
-  padding-right: 100px;
+  padding-right: 80px;
+}
+
+@media (max-width: 996px){
+  .navbar .navbar__items .dsla-search-wrapper{
+    padding-right: 0px;
+  }
 }
 
 .navbar .navbar__items .aa-DetachedSearchButton:focus {
@@ -238,8 +265,64 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background: none;
 }
 
+body .aa-Label svg{
+  color: var(--metavini-red);
+}
+
+body .aa-DetachedFormContainer{
+  background: var(--metavini-dark);
+}
+
 
 /* UTILITIES */
 .jcenter{
   justify-content: center;
 }
+
+body .hero__title {
+  font-size: 36px;
+  line-height: 42px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+body .hero__subtitle {
+  font-size: 18px;
+}
+
+body h3{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 24px;
+}
+
+/* BREADCRUMBS */
+body .breadcrumbs__link{
+  padding: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color:var(--font-color-light-gray);
+}
+
+body .breadcrumbs .breadcrumbs__item:first-child .breadcrumbs__link{
+  opacity:0;
+  width: 45px;
+}
+
+body .breadcrumbs .breadcrumbs__item:first-child:before{
+  content:'Home';
+  display: block;
+  position: absolute;
+  color:var(--font-color-light-gray)
+}
+
+body .breadcrumbs__item:not(:last-child):after {
+  margin: 0 14px;
+}
+
+

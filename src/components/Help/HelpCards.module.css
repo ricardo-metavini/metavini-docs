@@ -25,7 +25,7 @@
     max-width: 289px;
     min-width: 289px;
     border-radius: 0px;
-    background: #000000;
+    background: var(--cards-background-color);
     margin: 15px;
 }
 
