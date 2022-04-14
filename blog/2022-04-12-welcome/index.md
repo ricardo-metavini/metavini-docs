@@ -1,25 +1,21 @@
 ---
 slug: welcome
-title: Welcome
-authors: [md, cintia]
-tags: [facebook, hello, docusaurus]
+title: Welcome to Metavini
+authors: [octavio]
+tags: [metavini, welcome, docs, blog]
 ---
-
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
-
-Simply add Markdown files (or folders) to the `blog` directory.
-
-Regular blog authors can be added to `authors.yml`.
-
-The blog post date can be extracted from filenames, such as:
-
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
 
 ![Metavini Logo](../../static/img/logos/logo-dark.png)
 
-The blog supports tags as well!
+Welcome to the digital space where we will publish all updates related to Metavini!
 
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+We are excited to start this journey and can’t wait to have your feedback.
+
+This project is on its way to become the best marketplace for wine lovers and collectors.
+
+We are thrilled to have all our partners on board and soon will have updates on the platform.
+
+You can check our roadpmap here.
+
+Get in touch with us if you feel you can contribute to our vision!
+
